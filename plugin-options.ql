@@ -2,4 +2,4 @@ import javascript
 
 from DataFlow::FunctionNode dollarFn
 where jquery().getAPropertyRead("fn").getAPropertySource() = dollarFn
-select dollarFn.getLastParameter()
+select dollarFn
