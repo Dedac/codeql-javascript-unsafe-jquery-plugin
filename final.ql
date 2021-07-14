@@ -24,4 +24,5 @@ class Configuration extends TaintTracking::Configuration {
 
 from Configuration cfg, DataFlow::PathNode source, DataFlow::PathNode sink
 where cfg.hasFlowPath(source, sink)
+
 select sink, source, sink, "Potential XSS vulnerability in plugin."
